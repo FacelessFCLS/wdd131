@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="author" content="George Adams">
+    <meta name="description"
+      content="A picture album page that is responsive in both small and larger views. ">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="nav-mobile">
+            <span class="temple">Temple Album</span>
+            <div class="hamburger">
+                <div class="bars"></div>
+            </div>
+        </div>
+        <nav class="nav-desktop">
+            <span class="temple">Temple Album</span>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+
+        <ul class="nav-mobile-link">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">large</a></li>
+            <li><a href="#">Small</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <section>
+            <h1>Home</h1>
+            <div class="figure-content">
+
+                <figure>
+                    <img src="images/gilbert-arizona-temple.jpg" alt="Gilbert Arizona Temple">
+                    <figcaption>Gilbert, Az</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/mesa-arizona-temple.jpg" alt="Mesa Arizona Temple">
+                    <figcaption>Mesa, Az</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/tucson-arizona-temple.jpg" alt="Tucson Arizona Temple">
+                    <figcaption>Tucson, Az</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/spokane-washington-temple.jpg" alt="Spokane Washington Temple">
+                    <figcaption>Spokane, Wa</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/san-antonio-texas-temple.jpg" alt="San Antonio Texas Temple">
+                    <figcaption>San Antonio, Tx</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/hermosillo-sonora-mexico-temple.jpg"
+                      alt="Hermosillo Sonora Temple">
+                    <figcaption>Hermosillo, Mexico</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/seoul-korea-temple.jpg" alt="Seoul Korea Temple">
+                    <figcaption>Seoul, Korea</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/okinawa-japan-temple.jpg" alt="Okinawa Japan Temple">
+                    <figcaption>Okinawa, Japan</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/wellington-new-zealand-temple.jpg"
+                      alt="Wellington, New Zealand Temple">
+                    <figcaption>Wellington, NZ</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p id="copyright">©️<span id="currentyear"></span> George Adams 🌵 Tucson, Az</p>
+        <p id="lastmodified"></p>
+
+    </footer>
+
+</body>
+
+</html>
