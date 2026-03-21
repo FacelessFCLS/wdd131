@@ -1,0 +1,65 @@
+@media screen and (min-width: 700px) {
+    :root {
+        --accent3-color: #ffffff;
+    }
+
+    .main-content {
+        position: relative;
+    }
+
+    .image {
+        background-color: transparent;
+    }
+
+    .data,
+    .weather {
+        width: 300px;
+        background-color: var(--accent3-color);
+        color: var(--secondary-color);
+        font-weight: 500;
+        opacity: 0.8;
+        padding-top: 100px !important;
+        border-radius: 10px;
+    }
+
+    .data h2,
+    .weather h2 {
+        background-color: var(--accent1-color);
+        color: var(--primary-color);
+        padding: 12px;
+        text-align: left;
+        position: absolute;
+        width: 100%;
+        top: 15px;
+        left: -10px;
+        border-radius: 10px;
+    }
+
+    .data p,
+    .weather p {
+        padding: 4px;
+        font-size: small;
+    }
+
+    .data {
+        text-align: right;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+    }
+
+    .weather h2::after {
+        content: " ☀️";
+    }
+
+    #weather {
+        display: none;
+    }
+
+}
