@@ -105,9 +105,16 @@ nav a {
     text-decoration: none;
     color: #fff;
     border-bottom: 3px solid var(--primary-color);
+    display: none;
+    font-weight: 500;
+    color: var(--primary-font);
+    text-decoration: none;
+    border-radius: 0 0 .5em .5em;
 }
 
 nav a:hover {
+    background-color: white;
+    color: var(--primary-color);
     border-bottom: 3px solid yellow;
     font-weight: 700;
     border-radius: 0 0 .5em .5em;
@@ -125,25 +132,9 @@ nav {
     border-radius: 0 0 .5em .5em;
 }
 
-nav a {
-    display: none;
-    font-weight: 500;
-    color: var(--primary-font);
-    text-decoration: none;
-    border-radius: 0 0 .5em .5em;
-}
-
 nav a.active {
     color: #ffca38;
     text-decoration: underline 2px;
-}
-
-nav a:hover {
-    background-color: white;
-    color: var(--primary-color);
-    font-weight: 800;
-    border-radius: 0 0 .5em .5em;
-
 }
 
 .open,
