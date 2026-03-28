@@ -107,8 +107,6 @@ nav a {
     border-bottom: 3px solid var(--primary-color);
     display: none;
     font-weight: 500;
-    color: var(--primary-font);
-    text-decoration: none;
     border-radius: 0 0 .5em .5em;
 }
 
