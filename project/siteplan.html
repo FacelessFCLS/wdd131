@@ -62,10 +62,10 @@
             </div>
             <div class="color-swatch" style="background-color: #182463;">
                 <p>
-                    <font color="white">Dark Shade of Blue (#282a36;)</font>
+                    Dark Shade of Blue (#282a36;)
                 </p>
                 <p>
-                    <font color="white">Used for Primary Headers and buttons</font>
+                    Used for Primary Headers and buttons
                 </p>
             </div>
         </section>
@@ -86,11 +86,16 @@
 
     </main>
 
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | George Adams</p>
+        <p id="lastmodified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastmodified').textContent = document.lastModified;
+    </script>
 </body>
 
-<footer>
-    <p>&copy; <span id="currentyear"></span> | George Adams</p>
-    <p id="lastmodified"></p>
-</footer>
 
 </html>
