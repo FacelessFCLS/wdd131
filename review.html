@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="A product review form page.">
+    <meta name="author" content="George Adams">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body onload="tallyReviews()">
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Success!</h2>
+            <p>Your product review has been received.</p>
+        </section>
+        <p id="reviews"></p>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | George Adams | Tucson, Az</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
