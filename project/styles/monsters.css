@@ -1,0 +1,141 @@
+* {
+    --primary-color: #013468;
+    --primary-font-color: white;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    min-height: 1vh;
+}
+
+header {
+    grid-column: 1/3;
+    color: #ddd;
+    background-color: var(--primary-color);
+    padding: 1em 0 0;
+}
+
+header h1 {
+    padding: .5em 1em;
+    margin: 0;
+}
+
+main {
+    display: grid;
+
+    max-width: 1500px;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 250px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery div {
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    text-align: center;
+    padding: .5em;
+    margin: 1em auto;
+    min-width: 350px;
+}
+
+#gallery div img {
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 0 1px .5em 3px grey;
+}
+
+footer {
+    grid-column: 1/3;
+    color: #fff;
+    padding: .5em .5em 2em;
+    background-color: #555;
+    text-align: center;
+}
+
+#lastModified {
+    color: white;
+}
+
+.active {
+    color: #fffb00;
+}
+
+/* ========== HAMBURGUER MENU ========== */
+
+#menu {
+    font-size: 1.5rem;
+    padding: .1em .2em;
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    position: fixed;
+    right: .7em;
+    top: 1.6em;
+    border: 1px solid #002e5b;
+    border-radius: .1em;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+nav,
+a {
+    margin: 0;
+}
+
+nav a {
+    padding: 1em;
+    flex: 1 1 100%;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px solid var(--primary-color);
+    display: none;
+    font-weight: 500;
+    border-radius: 0 0 .5em .5em;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-bottom: 3px solid yellow;
+    font-weight: 700;
+    border-radius: 0 0 .5em .5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #013468;
+    text-align: center;
+    position: fixed;
+    right: 1em;
+    top: 2.4em;
+    width: 12em;
+    border-radius: 0 0 .5em .5em;
+}
+
+nav a.active {
+    color: #ffca38;
+    text-decoration: underline 2px;
+}
+
+.open,
+.open a {
+    display: block;
+}
