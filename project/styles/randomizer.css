@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+header {
+    grid-column: 1/3;
+    color: black;
+    background-color: var(--primary-color);
+    padding: 1em 0 0;
+}
+
+header h1 {
+    text-align: center;
+    padding: .5em 1em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.main-nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:1rem;
+  justify-content:flex-end;
+}
+
+.main-nav a{
+  text-decoration:none;
+  color:inherit;
+  padding:.25rem .5rem
+}
+
+.main-nav a:focus,
+
+ .main-nav a:hover{
+  background:#5bb9d1;
+  border-radius:6px
+}
+
+dice-container {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    margin-bottom: 40px;
+}
+
+.dice {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    transform: rotateX(15deg) rotateY(15deg);
+}
+
+.dice.rolling {
+    animation: roll 1s ease-out;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(720deg);
+    }
+}
+
+.dice-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Positioning the faces of the dice */
+.face-1 {
+    transform: translateZ(75px)
+}
+
+.face-2 {
+    transform: rotateX(-180deg) translateZ(75px);
+}
+
+.face-3 {
+    transform: rotateY(90deg) translateZ(75px);
+}
+
+.face-4 {
+    transform: rotateY(-90deg) translateZ(75px);
+}
+
+.face-5 {
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.face-6 {
+    transform: rotateX(-90deg) translateZ(75px);
+}
+
+.controls {
+    margin-bottom: 40px;
+}
+
+.roll-btn {
+    padding: 15px 40px;
+    background-color: #AFEEEE;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.roll-btn:hover {
+    background-color: #FF5252;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.roll-btn:active {
+    transform: translateY(0);
+}
+
+.result {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    min-height: 40px;
+}
+
+.history {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #AFEEEE;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.history h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#history-list {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
+
+.roll-number {
+    font-weight: 600;
+    color: #FF6B6B;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    .dice {
+        width: 120px;
+        height: 120px;
+    }
+
+    .face-1 {
+        transform: translateZ(60px);
+    }
+
+    .face-2 {
+        transform: rotateX(-180deg) translateZ(60px);
+    }
+
+    .face-3 {
+        transform: rotateY(90deg) translateZ(60px);
+    }
+
+    .face-4 {
+        transform: rotateY(-90deg) translateZ(60px);
+    }
+
+    .face-5 {
+        transform: rotateX(90deg) translateZ(60px);
+    }
+
+    .face-6 {
+        transform: rotateX(-90deg) translateZ(60px);
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
