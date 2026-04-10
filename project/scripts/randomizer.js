@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const dice = document.getElementById("dice");
     const rollBtn = document.getElementById("roll-btn");
     const result = document.getElementById("result");
