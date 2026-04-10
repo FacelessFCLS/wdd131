@@ -1,0 +1,20 @@
+@media screen and (min-width: 520px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        position: initial;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        /* flex: 1 1 100%; */
+    }
+
+}

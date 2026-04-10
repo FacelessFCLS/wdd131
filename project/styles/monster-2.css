@@ -10,6 +10,13 @@ body {
     min-height: 1vh;
 }
 
+.home {
+    
+    gap: 1em;
+    background-color: var(--primary-color);
+    color: black;
+}
+
 header {
     grid-column: 1/3;
     color: black;

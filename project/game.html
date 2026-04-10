@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="George Adams">
+  <title>Desert Dungeon — Game</title>
+  <meta name="description" content="Desert Dungeon Home page. Roll Dice! Draw a card! Look at monsters! Play a little game!">
+  <link rel="stylesheet" href="styles/game.css">
+  <link rel="stylesheet" href="styles/game-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <script src="scripts/game.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="images/dd-logo.webp" alt="Desert Dungeon Logo">
+        <h1>Desert Dungeon</h1>
+        <p>I made a (very short) video game!</p>
+      </div>
+        <nav class="main-nav" aria-label="Primary">
+        <a class="nav-item" href="dungeon.html">Home</a>
+        <a class="nav-item active" href="randomizer.html">Dice Roller</a>
+        <a class="nav-item" href="monster-2.html">Monsters</a>
+        <a class="nav-item" href="game.html">Game</a>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <main>
+        <h2>Game</h2>
+        <p>This game was intended to be playable by you, the visitor to this page. Unfortunately, I did not realize the complexity of having a playable game within my HTML project. As a result, there is no game for you to play. However! I have included a video! If it would please thee, watch this video and pretend that it is in fact YOU playing the game! What a joy! I made this game in Python using pygame, and it took me approximately 20 hours to complete. Please enjoy.</p>
+    </main>
+    <section class="wrapper-main">
+        <video class="my-video" src="videos/video-game.mp4" width="900" controls poster="images/video-poster.png"></video>
+        <br>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="halfSize()">Half Size</button>
+        <button onclick="fullSize()">Full Size</button>
+    </section>
+
+    <script>
+        let myVideo = document.querySelector(".my-video");
+        let playButton = document.querySelector("button:nth-of-type(1)");
+
+        function playPause() {
+            if (myVideo.paused) {
+                myVideo.play();
+            } 
+            else {
+                myVideo.pause();
+            }
+        }
+
+        function halfSize() {
+            myVideo.width = 450;
+        }
+
+        function fullSize() {
+            myVideo.width = 900;
+        }
+
+    </script>
+
+  </body>
+
+  <footer>
+        <p id="copyright">©️<span id="currentyear"></span> George Adams 🌵 Tucson, Az</p>
+        <p id="lastmodified"></p>
+  </footer>
+</body>
+</html>

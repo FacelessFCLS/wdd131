@@ -7,12 +7,14 @@
   <meta name="author" content="George Adams">
   <title>Desert Dungeon — Home</title>
   <meta name="description" content="Desert Dungeon Home page. Roll Dice! Draw a card! Look at monsters! Play a little game!">
-  <link rel="stylesheet" href="styles/dungeon.css">
+  <link rel="stylesheet" href="styles/monster-2.css">
+  <link rel="stylesheet" href="styles/monster-2-large.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+  <script src="scripts/monster-2.js" defer></script>
 </head>
 
 <body>
@@ -32,3 +34,22 @@
       </nav>
     </div>
   </header>
+
+  <body>
+    <main class="home">
+      <h2>Welcome to the Desert Dungeon!</h2>
+      <h1>Dice Roller</h1>
+      <p>The main function of this page was made in JavaScript. A single die can be rolled by clicking the "Roll Dice" button. The page will store up to 10 previous results.</p>
+      <h1>Monsters</h1>
+      <p>On the Monsters page, you can view a handful of monster options. By clicking on the "Beast" or "Undead" links, you can filter by these monster types. Additionally, you can filter by weaker or stronger monsters. Some Monster information is available above the corresponding picture.</p>
+      <h1>Game</h1>
+      <p>In my free time, I made a simple dungeon crawler game. I was excited to use this game in this project but realized too late that I could not fit a .py file into my .html file and have the game be playable. Instead, there is a video of the game. For this page, I have JavaScript in both a .js file and in the .html file just so I could play around with variety.</p>
+    </main>
+  </body>
+
+  <footer>
+        <p id="copyright">©️<span id="currentyear"></span> George Adams 🌵 Tucson, Az</p>
+        <p id="lastmodified"></p>
+  </footer>
+</body>
+</html>
