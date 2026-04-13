@@ -77,7 +77,7 @@
                 rollBtn.disabled = true;
 
                 //generate random number between 1 and 6
-                const randomNumber = Math.floor(Math.random() * 6);
+                const randomNumber = Math.floor(Math.random() * 6) + 1;
 
                 // After animation completes
                 setTimeout(() => {
@@ -152,7 +152,7 @@
             rollBtn.addEventListener("click", rollDice);
 
             // Initial dice face
-            const initialNumber = Math.floor(Math.random() * 6) + 1;
+            const initialNumber = Math.floor(Math.random() * 6);
             setDiceFace(initialNumber);
             result.innerHTML = `The die is showing <span style="color: #ff6b6b; font-weight: bold; font-size: 3rem">${initialNumber}</span>`;
         });
